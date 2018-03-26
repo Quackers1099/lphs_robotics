@@ -1,0 +1,51 @@
+The goal here is to make Soccer playing robots, we are permitted to create two robots; a defender and an attacker.
+
+Sensors: 
+
+Do we want to interface with the default lego sensors using Arduino, or do you want to buy arduino components and use them instead? 
+
+What are the benefits of using the default lego sensors? 
+
+How do we interface with these sensors?
+
+
+The sensors that we should plan to use: 
+
+[] InfraRed Sensors
+
+[] Colour Sensors
+
+[] Compass sensors
+
+[] Ultra-sonic sensors (for detecting the walls?) 
+
+Are there any real benefits of having a touch sensor to detect when we have 'captured' the ball? 
+
+Design:
+
+What shape robot should we create? We are permitted to create any robot within the 22cm diameter.
+
+
+Do we want to use omni-directional wheels? How many? What is the minimum number of wheels?
+
+How should we construct the chassis? We could purchase a premade base from online, or we could 3d-print/laser-cut the chassis.
+
+Laser-cutting has the benefit of fast production, and the ease of working with wood (being able to drill holes rapidly to attatch sensors etc)
+
+3d printing allows for more complex shapes, it offers strength, but it takes many hours to produce and is tricky to work with after-the-fact (plastic is brittle)
+
+Are we going to have a multi-layered design?
+
+How will the robot be powered?? We will need a product called a 'buck-boost' converter, which takes in any voltage and converts it to an adjustable threshold (to run the arduinos/motors)
+
+What sized motors will we use? We want the perfect compromise between torque and speed, because as the speed increases the torque decreases. 
+
+Will we gear the motors down? Research some possible motors we could use...
+
+
+ 
+
+
+
+
+

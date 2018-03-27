@@ -1,3 +1,5 @@
+Questions to think about reagarding the 2018 LPHS SoccerBots
+
 The goal here is to make Soccer playing robots, we are permitted to create two robots; a defender and an attacker.
 
 Sensors: 

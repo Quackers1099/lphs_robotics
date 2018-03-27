@@ -4,7 +4,9 @@ Sensors:
 
 Do we want to interface with the default lego sensors using Arduino, or do you want to buy arduino components and use them instead? 
 
+
 What are the benefits of using the default lego sensors? 
+
 
 How do we interface with these sensors?
 
@@ -19,7 +21,8 @@ The sensors that we should plan to use:
 
 [] Ultra-sonic sensors (for detecting the walls?) 
 
-Are there any real benefits of having a touch sensor to detect when we have 'captured' the ball? 
+[] Touch sensors? (for detecting when we have 'captured' the ball)
+
 
 Design:
 
@@ -28,24 +31,48 @@ What shape robot should we create? We are permitted to create any robot within t
 
 Do we want to use omni-directional wheels? How many? What is the minimum number of wheels?
 
+
+How do Omni-directional wheels work? 
+
+
 How should we construct the chassis? We could purchase a premade base from online, or we could 3d-print/laser-cut the chassis.
+
 
 Laser-cutting has the benefit of fast production, and the ease of working with wood (being able to drill holes rapidly to attatch sensors etc)
 
-3d printing allows for more complex shapes, it offers strength, but it takes many hours to produce and is tricky to work with after-the-fact (plastic is brittle)
+
+3d printing allows for more complex shapes, it offers strength, but it takes many hours to produce and is tricky to work with after-the-fact (plastic is brittle, so it is relatively difficult to drill into)
+
 
 Are we going to have a multi-layered design?
 
+
 How will the robot be powered?? We will need a product called a 'buck-boost' converter, which takes in any voltage and converts it to an adjustable threshold (to run the arduinos/motors)
 
-What sized motors will we use? We want the perfect compromise between torque and speed, because as the speed increases the torque decreases. 
+
+What sized motors will we use? We want the perfect compromise between torque and speed, because as the speed increases the torque decreases. We also need to look into how much current the motors use, as our 'H-Bridge' (the component that drives the motors with the appropriate power) needs to be able to handle the current draw of the motor.
+
+
+There is the possiblilty to use an 'encoder' on the motors, this components allows us to know the exact location of the motor at any given time - this is what the lego motors use to know how far they have rotated. I suggest we don't use an encoder unless we have need it, due to the time restraints. We should get enough control just saying 'turn the motor on until we reach the green area' instead of 'turn 96.43 degrees'.
+
+The arduino runs on 3.3V-12V, I suggest we get another buck-boost-converter to supply 5V directly into the arduino, so that the voltage-regulator on the arduino doesn't overheat.
+
 
 Will we gear the motors down? Research some possible motors we could use...
 
 
- 
+We need to decide if we want speed or 'pushing power': 
 
+The size of the omni-directional wheels also play a major role, after doing some research it seems that Omnidirectional Drive wheels don't have much torque, this means that our program would have to be able to 'outsmart' the opposition using speed and skill.
 
+This means that we want motors with a low gear ratio - meaning that for every motor rotation/revolution the gears will travel at a  similar speed and torque that resembles that of the drive motor. (the robot moves fast)
 
+Possibly Compatible motors: 
+https://www.superdroidrobots.com/shop/item.aspx/ig32-24vdc-191-rpm-gear-motor/373/ - 191 RPM 24V <-- (probably too high to drive off a battery pack)
 
+We could pick a motor with an adjustable gear-ratio so that we could set the ideal speed of the motors, possibly using:
+Tamiya 72001 Planetary Gearbox Kit - https://www.pololu.com/product/70
 
+With all of this in mind... Do we want to buy a kit which contains the motors, chassis and power-supply, and further build upon it, or, do we want to work incredibly hard and build a robot from scratch? The choice is being given to you now as this project is a large commitment seeing as we only have three months to get this completed. 
+
+Thanks for all your interest so far! This project is going to be great fun :-D

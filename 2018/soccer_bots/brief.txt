@@ -52,7 +52,6 @@ How will the robot be powered?? We will need a product called a 'buck-boost' con
 
 What sized motors will we use? We want the perfect compromise between torque and speed, because as the speed increases the torque decreases. We also need to look into how much current the motors use, as our 'H-Bridge' (the component that drives the motors with the appropriate power) needs to be able to handle the current draw of the motor.
 
-
 There is the possiblilty to use an 'encoder' on the motors, this components allows us to know the exact location of the motor at any given time - this is what the lego motors use to know how far they have rotated. I suggest we don't use an encoder unless we have need it, due to the time restraints. We should get enough control just saying 'turn the motor on until we reach the green area' instead of 'turn 96.43 degrees'.
 
 The arduino runs on 3.3V-12V, I suggest we get another buck-boost-converter to supply 5V directly into the arduino, so that the voltage-regulator on the arduino doesn't overheat.
